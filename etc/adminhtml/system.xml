@@ -182,13 +182,13 @@
                         <field id="*/*/active">1</field>
                     </depends>
                 </field>
-                <field id="send_promo" translate="label" type="select" sortOrder="118" showInDefault="1" showInWebsite="1" showInStore="1">
+                <!-- <field id="send_promo" translate="label" type="select" sortOrder="118" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Send Promo Rules and Promo Codes</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="*/*/active">1</field>
                     </depends>
-                </field>
+                </field> -->
                 <field id="including_taxes" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Prices including taxes</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>

@@ -250,7 +250,8 @@ class Ecommerce
             } else {
                 $this->_helper->log('No Carts will be synced until the store is completely synced');
             }
-            if ($this->_helper->getConfigValue(\SqualoMail\SqmMcMagentoTwo\Helper\Data::XML_SEND_PROMO, $storeId)) {
+            // API for Promo Codes and Rules is not yet implemented
+            /* if ($this->_helper->getConfigValue(\SqualoMail\SqmMcMagentoTwo\Helper\Data::XML_SEND_PROMO, $storeId)) {
                 $this->_helper->log('Generate Rules payload');
                 $rules = $this->_apiPromoRules->sendRules($storeId);
                 $results = array_merge($results, $rules);
@@ -260,7 +261,7 @@ class Ecommerce
                 $coupons = $this->_apiPromoCodes->sendCoupons($storeId);
                 $results = array_merge($results, $coupons);
                 $this->_helper->log('Coupons payload size: ' . count($coupons));
-            }
+            } */
         }
 
         $this->_helper->log('Total payload size: ' . count($results));
